@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Captcha AI Bot - Complete Solution</title>
+    
+    <!-- Embedded CSS -->
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3a0ca3;
+            --dark: #212529;
+            --light: #f8f9fa;
+            --success: #4cc9f0;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+        h1 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            color: #6c757d;
+            font-size: 1.2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: var(--secondary);
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        pre {
+            background: #2b2d42;
+            color: #f8f8f2;
+            padding: 1.2rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        code {
+            background: #edf2f4;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9em;
+            color: #2b2d42;
+        }
+        ol {
+            padding-left: 1.8rem;
+        }
+        li {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.7rem 1.4rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .password {
+            background: #fff3bf;
+            padding: 0.7rem;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: inline-block;
+            margin: 0.5rem 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+            padding-top: 1rem;
+            border-top: 1px solid #dee2e6;
+        }
+        .highlight {
+            background: #fff9c4;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.2rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    
+    <!-- Preload important resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>2Captcha AI Bot</h1>
+            <p class="subtitle">Complete Automated CAPTCHA Solution</p>
+        </header>
+
+        <div class="card">
+            <h2>🚀 Getting Started</h2>
+            <ol>
+                <li>
+                    <strong>Download the bot</strong><br>
+                    Clone the repository or download the <code class="highlight">bot</code> folder
+                </li>
+                <li>
+                    <strong>Install requirements</strong><br>
+                    <pre><code>pip install -r requirements.txt
+playwright install chromium</code></pre>
+                </li>
+                <li>
+                    <strong>Run the bot</strong><br>
+                    <pre><code>python 2captcha_bot.py</code></pre>
+                </li>
+                <li>
+                    <strong>Access the interface</strong><br>
+                    Open in your browser: <a href="http://localhost:7860" class="btn">Launch Bot Interface</a>
+                </li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>🔑 Admin Access</h2>
+            <p>Default admin password:</p>
+            <p class="password">Hizer120</p>
+            <p>You can change this in the <code>CONFIG</code> settings.</p>
+        </div>
+
+        <div class="card">
+            <h2>⚙️ Configuration Options</h2>
+            <p>Customize these settings in the bot's configuration:</p>
+            <pre><code>{
+    "admin_password": "Hizer120",  // Change this
+    "max_work_time": 3600,         // 1 hour (in seconds)
+    "min_break": 300,              // 5 min break
+    "max_break": 900,              // 15 min break
+    "proxy_list": [],              // Add proxies ["ip:port", ...]
+    "dummy_mode": true             // Set false for real AI
+}</code></pre>
+        </div>
+
+        <div class="card">
+            <h2>📁 Repository Structure</h2>
+            <pre><code>your-repo/
+├── .nojekyll          # Disables Jekyll processing
+├── docs/
+│   └── index.html     # This documentation page
+└── bot/
+    ├── 2captcha_bot.py  # Main bot code
+    └── requirements.txt # Dependencies</code></pre>
+        </div>
+
+        <footer>
+            <p><strong>Note:</strong> This is a Python application that must be run locally.</p>
+            <p>GitHub Pages serves only as documentation - the bot itself runs on your computer.</p>
+        </footer>
+    </div>
+
+    <!-- GitHub Pages Fix Script -->
+    <script>
+        // Ensure proper GitHub Pages deployment
+        if(window.location.hostname.includes('github.io')) {
+            document.querySelector('footer').innerHTML += `
+                <p><em>Page last updated: ${new Date().toLocaleDateString()}</em></p>
+            `;
+        }
+    </script>
+</body>
+</html>
